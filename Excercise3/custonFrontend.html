@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Armaan's Shop!</h1>
+    <form action="customBackend.php"></form>
+
+    <p>Enter Username:</p>
+    <input type="text" name="username" placeholder="Username">
+    <p>Enter Password:</p>
+    <input type="password" name="password" placeholder="Password">
+    <p>Gloves: $30</p>
+    <input type="text" name="gamount">
+    <p>Shoes: $50</p>
+    <input type="text" name="samount">
+    <p>Hat: $10</p>
+    <input type="text" name="hamount">
+
+    <p>Shipping Options:</p>
+    <input type="radio" name="shipping" value="0">Free 7 Day<br>
+    <input type="radio" name="shipping" value="50">$50 Overnight<br>
+    <input type="radio" name="shipping" value="5">$5 3 Day<br>
+
+    <button type="reset"></button>
+    <button type="submit" onclick="check()"></button>
+    <script src="formChecker.js"></script>
+</body>
+</html>
