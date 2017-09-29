@@ -1,0 +1,23 @@
+.reciept{
+    text-align: center;
+    margin: 0 auto;
+    background-color:black;
+    color: #fff;
+    border: 1px #fff solid;
+    padding: 10px;
+    display: inline-block;
+}
+
+*{
+    text-align: center;
+    margin: 0 auto;
+    background-color: olivedrab;
+    color: #fff;
+}
+input{
+    background-color: #fff;
+    color: #000;
+}
+button{
+    background-color: black; 
+}

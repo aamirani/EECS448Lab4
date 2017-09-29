@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Shop</title>
 </head>
+
 <body>
     <h1>Welcome to Armaan's Shop!</h1>
     <form action="customBackend.php" method="POST">
 
-    <p>Enter Username:</p>
-    <input type="text" name="username" placeholder="Username">
-    <p>Enter Password:</p>
-    <input type="password" name="password" placeholder="Password">
-    <p>Gloves: $30</p>
-    <input type="text" name="gamount">
-    <p>Shoes: $50</p>
-    <input type="text" name="samount">
-    <p>Hat: $10</p>
-    <input type="text" name="hamount">
+        <p>Enter Username:</p>
+        <input type="text" name="username" placeholder="Username">
+        <p>Enter Password:</p>
+        <input type="password" name="password" placeholder="Password">
+        <p>Gloves: $30</p>
+        <input type="text" name="gamount">
+        <p>Shoes: $50</p>
+        <input type="text" name="samount">
+        <p>Hat: $10</p>
+        <input type="text" name="hamount">
 
-    <p>Shipping Options:</p>
-    <select name="shipping">
+        <p>Shipping Options:</p>
+        <select name="shipping">
         <option value="Free">Free 7 Day</option>
         <option value="Overnight">$50 Overnight</option>
         <option value="3 Day">$5 3 Day</option>
       </select>
 
-    <button type="reset">Reset</button>
-    <button type="submit" onclick="return check()">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="submit" onclick="return check()">Submit</button>
     </form>
-    
+
     <script src="formChecker.js"></script>
 </body>
+
 </html>
