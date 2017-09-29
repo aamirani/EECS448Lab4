@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Welcome to Armaan's Shop!</h1>
-    <form action="customBackend.php"></form>
+    <form action="customBackend.php" method="POST">
 
     <p>Enter Username:</p>
     <input type="text" name="username" placeholder="Username">
@@ -21,12 +21,16 @@
     <input type="text" name="hamount">
 
     <p>Shipping Options:</p>
-    <input type="radio" name="shipping" value="0">Free 7 Day<br>
-    <input type="radio" name="shipping" value="50">$50 Overnight<br>
-    <input type="radio" name="shipping" value="5">$5 3 Day<br>
+    <select name="shipping">
+        <option value="7">Free 7 Day</option>
+        <option value="50">$50 Overnight</option>
+        <option value="5">$5 3 Day</option>
+      </select>
 
-    <button type="reset"></button>
-    <button type="submit" onclick="check()"></button>
+    <button type="reset">Reset</button>
+    <button type="submit" onclick="return check()">Submit</button>
+    </form>
+    
     <script src="formChecker.js"></script>
 </body>
 </html>

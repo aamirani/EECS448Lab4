@@ -1,29 +1,30 @@
 //All variables
-var username = document.getElementsByName('username');
-var password = document.getElementsByName('password');
-var gloves = document.getElementsByName('gamount');
-var shoes = document.getElementsByName('samount');
-var hats = document.getElementsByName('hamount');
-var shipping = document.getElementsByName('shipping');
 function check(){ //form check
+    var username = document.getElementsByName('username')[0].value;
+    var password = document.getElementsByName('password')[0].value;
+    var gloves = document.getElementsByName('gamount')[0].value;
+    var shoes = document.getElementsByName('samount')[0].value;
+    var hats = document.getElementsByName('hamount')[0].value;
+    var shipping = document.getElementsByName('shipping')[0].value;
     if(password == ""){
         alert("Password cannot be empty");
     }
-    if(username == "" || password == ""){
-        alert("Username or password cannot be empty");
+    if(username == ""){
+        alert("Username cannot be empty");
     }
-    if(gamout < 0 || hamount < 0 || samount < 0){
+    if(gloves < 0 || hats < 0 || shoes < 0){
         alert("Amounts cannot be less than 0")
     }
-    if(gamout == "" || hamount == "" || samount == ""){
+    if(gloves == "" || hats == "" || shoes == ""){
         alert("Amounts cannot be less than 0")
     }
-    if (!(isEmail(username))){
+    if(!isEmail(username)){
         alert("Username must be in an email format");
     }
-    if(shipping != "50" && shipping != "5" || shipping != "0"){
-        alert("A shipping option must be selected")
+    if(shipping = ''){
+        alert("Please pick a shipping option");
     }
+    
 }
 
 function isEmail(email) 
